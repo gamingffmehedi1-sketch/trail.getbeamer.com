@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacked By Mehedi</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #050505;
+      color: #ff003c;
+      font-family: "Courier New", monospace;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px;
+      max-width: 900px;
+      width: 90%;
+      border: 1px solid #ff003c;
+      box-shadow: 0 0 30px rgba(255, 0, 60, .25);
+      background: rgba(10, 10, 10, .9);
+    }
+
+    .glitch {
+      font-size: clamp(40px, 8vw, 90px);
+      font-weight: bold;
+      text-transform: uppercase;
+      text-shadow:
+        3px 0 #00ffff,
+        -3px 0 #ff003c;
+      animation: glitch .8s infinite;
+    }
+
+    @keyframes glitch {
+      0%, 100% { transform: translate(0); }
+      20% { transform: translate(-3px, 2px); }
+      40% { transform: translate(3px, -2px); }
+      60% { transform: translate(-2px, -1px); }
+      80% { transform: translate(2px, 1px); }
+    }
+
+    .subtitle {
+      margin-top: 25px;
+      color: #ddd;
+      font-size: 20px;
+    }
+
+    .name {
+      margin-top: 15px;
+      font-size: 35px;
+      color: #fff;
+      text-shadow: 0 0 15px #ff003c;
+    }
+
+    .terminal {
+      margin: 35px auto 0;
+      padding: 20px;
+      max-width: 650px;
+      text-align: left;
+      background: #000;
+      border-left: 4px solid #ff003c;
+      color: #00ff66;
+      line-height: 1.8;
+    }
+
+    .footer {
+      margin-top: 30px;
+      color: #666;
+      font-size: 13px;
+    }
+
+    .cursor {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="glitch">HACKED</div>
+
+    <div class="subtitle">
+      This site has been owned by
+    </div>
+
+    <div class="name">
+      MEHEDI
+    </div>
+
+    <div class="terminal">
+      &gt; Initializing system...<br>
+      &gt; Security check bypassed...<br>
+      &gt; Access granted.<br>
+      &gt; Operator: MEHEDI<br>
+      &gt; Status: <span style="color:#ff003c;">SYSTEM COMPROMISED</span><br>
+      &gt; <span class="cursor">_</span>
+    </div>
+
+    <div class="footer">
+      Security is not a product. It's a process.
+      <br><br>
+      © 2026 Mehedi
+    </div>
+
+  </div>
+
+</body>
+</html>
